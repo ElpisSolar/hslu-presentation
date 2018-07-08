@@ -50,22 +50,26 @@ header {
 } // end .h-wrap
 
 .menu-icon {
-  @extend %padding-large;
-  position: absolute;
+  background-color: blue;
+  border-radius: 60%;
+  padding: 10px 10px 20px 10px;
+  border-color: slategray;
+  margin-right: 2em;
+  margin-top: 1em;
+  position: fixed;
   top: 0;
   right: 0;
   cursor: pointer;
   z-index: 200;
   &:hover {
     opacity: 1;
-  }
-
-  .lines {
+  }        
+ .lines {
     display: inline-block;
     position: relative;
-    width: 25px;
-    height: 2px;
-    background: $text-color;
+    width: 30px;
+    height: 2.5px;
+    background: white;
     border-radius: 20px;
 
     &::before,
@@ -74,9 +78,9 @@ header {
       display: inline-block;
       position: absolute;
       left: 0;
-      width: 25px;
-      height: 2px;
-      background: $text-color;
+      width: 30px;
+      height: 2.5px;
+      background: white;
       border-radius: 20px;
 
       -webkit-transition: all .3s ease;
