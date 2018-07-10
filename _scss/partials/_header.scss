@@ -5,6 +5,7 @@ header {
 
 .h-wrap {
   @extend %padding-large;
+  padding-bottom: 10px;
 
   h1.title {
     @extend h3;
@@ -51,8 +52,8 @@ header {
 
 .menu-icon {
   background-color: blue;
-  border-radius: 60%;
-  padding: 10px 10px 20px 10px;
+  border-radius: 100%;
+  padding: 13px 13px 23px 13px;
   border-color: slategray;
   margin-right: 2em;
   margin-top: 1em;
@@ -64,11 +65,14 @@ header {
   &:hover {
     opacity: 1;
   }        
+  .logo {
+    max-width:200px;
+  }
  .lines {
     display: inline-block;
     position: relative;
     width: 30px;
-    height: 2.5px;
+    height: 2px;
     background: white;
     border-radius: 20px;
 
@@ -79,7 +83,7 @@ header {
       position: absolute;
       left: 0;
       width: 30px;
-      height: 2.5px;
+      height: 2px;
       background: white;
       border-radius: 20px;
 
@@ -191,3 +195,10 @@ header {
   }
 
 } // end .off-canvas
+
+#logo-header {
+    width: 180px;
+    height: 70px;
+    margin-left: -10px;
+    margin-top: -20px;
+}
