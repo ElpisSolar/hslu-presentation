@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Perception of design, a developer point of view"
-date:   2014-01-05 16:57:51
+title:  "Category D"
+date:   2018-07-02 16:57:51
 ---
 
 His boss would certainly come round with the doctor from the medical insurance company, accuse his parents of having a lazy son, and accept the doctor's recommendation not to make any claim as the doctor believed that no-one was ever ill but that many were workshy.
