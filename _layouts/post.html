@@ -2,32 +2,30 @@
 layout: default
 ---
 
+<!-- Post page header -->
+
 <section class="single-wrap">
   <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="feat">
-      <h5 class="page-date">
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {{ page.date | date_to_long_string }}
-        </time>
-      </h5>
+      <h5 class="page-title" itemprop="name headline">{{ page.title }}</h5>
     </div>
-    <h1 class="page-title" itemprop="name headline">{{ page.title }}</h1>
+
+    <!-- Main Page content goes here (content in _posts) -->
+    
     <div itemprop="articleBody">
       {{ content }}
     </div>
-    <div class="feat share">
-      <a href="http://twitter.com/share" class="popup">
-        <span class="icon-twitter"></span>
-      </a>
-    </div>
+    
+   <!-- Footer site navigation buttons -->
+
     {% if page.next %}
       <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
-        <span class="nav-title nav-title-next">newer</span> &rarr;
+        <span class="nav-title nav-title-next">Next</span> &rarr;
       </a>
     {% endif %}
     {% if page.previous %}
       <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
-        &larr; <span class="nav-title nav-title-prev">older</span>
+        &larr; <span class="nav-title nav-title-prev">Back</span>
       </a>
     {% endif %}
   </article>
