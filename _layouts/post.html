@@ -10,12 +10,42 @@ layout: default
       <h5 class="page-title" itemprop="name headline">{{ page.title }}</h5>
     </div>
 
-    <!-- Main Page content goes here (content in _posts) -->
-    
-    <div itemprop="articleBody">
-      {{ content }}
+<!-- Main Page content goes here (content in _posts) -->
+
+  <!-- check what this does first<div itemprop="articleBody" -->
+  <div class="accordion-container">
+    <button class="accordion">Category Name</button>
+    <div class="panel">
+      <div class="panel-link">
+        <a>some content</a>
+      </div>
     </div>
-    
+    <button class="accordion">Category Name</button>
+    <div class="panel">
+      <div class="panel-link">
+        <a>some content</a>
+      </div>
+    </div>
+      <button class="accordion">Category Name</button>
+    <div class="panel">
+      <div class="panel-link">
+        <a>some content</a>
+      </div>
+    </div>
+    <button class="accordion">Category Name</button>
+    <div class="panel">
+      <div class="panel-link">
+        <a>some content</a>
+      </div>
+    </div>
+    <button class="accordion">Category Name</button>
+    <div class="panel">
+      <div class="panel-link">
+        <a>some content</a>
+      </div>
+    </div>
+  </div>
+  
    <!-- Footer site navigation buttons -->
 
     {% if page.next %}
@@ -30,3 +60,21 @@ layout: default
     {% endif %}
   </article>
 </section>
+
+<!-- Accordion script -->
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>

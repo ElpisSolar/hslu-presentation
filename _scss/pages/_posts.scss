@@ -93,6 +93,60 @@
       
 } // end #single-wrap
 
+// Accordion
+
+.accordion-container {
+  padding-bottom: 30px;
+}
+
+.accordion {
+  background-color: $accordion-color;
+  height: $accordion-height;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  border: solid $accordion-color 0.1px;
+}
+
+.accordion:after {
+  margin-left: 5px;
+}
+
+.active,
+.accordion:hover {
+  background-color: red;
+}
+
+.accordion:after {
+  background-color: $accordion-color;
+}
+
+:focus {
+  outline: none !important;
+}
+
+.panel {  
+  max-height: 0px;
+  text-align: center;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border: solid $accordion-color 0.1px;
+}
+
+.panel-link {
+  padding: 15px;
+  background-color: transparent;
+  height: $accordion-height;
+}
+
+.panel-link a {
+  color: $accordion-color;
+  font-weight: 500;
+  text-align: center;
+}
+
 // Pagination
 
 #prev,
