@@ -58,13 +58,18 @@ h4 {
   font-weight: bold;
   text-transform: uppercase; 
   letter-spacing: 3px;
-  margin: $spacing-l 0 $spacing-xs;
   color: lighten($text-color, 40%);
 }
 
 h5 { 
   @extend h4;
   text-align: center;
+}
+
+.page-title {
+  padding: $spacing-s;
+  color: darken($main-color, 40%);
+  background-color: darken($main-color, 5%);
 }
 
 h6 { 

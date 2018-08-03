@@ -12,42 +12,46 @@ layout: default
 
 <!-- Main Page content goes here (content in _posts) -->
 
-  <!-- check what this does first<div itemprop="articleBody" -->
-  <div class="accordion-container">
-    <button class="accordion">Category Name</button>
-    <div class="panel">
-      <div class="panel-link">
-        <a>some content</a>
-      </div>
-    </div>
-    <button class="accordion">Category Name</button>
-    <div class="panel">
-      <div class="panel-link">
-        <a>some content</a>
-      </div>
-    </div>
-      <button class="accordion">Category Name</button>
-    <div class="panel">
-      <div class="panel-link">
-        <a>some content</a>
-      </div>
-    </div>
-    <button class="accordion">Category Name</button>
-    <div class="panel">
-      <div class="panel-link">
-        <a>some content</a>
-      </div>
-    </div>
-    <button class="accordion">Category Name</button>
-    <div class="panel">
-      <div class="panel-link">
-        <a>some content</a>
-      </div>
-    </div>
-  </div>
+  <ul class="posts">
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+      <a href="#">
+        <div class="p-wrap">
+          <article class="inner">
+            <p>Class 1</p>
+          </article>
+        </div>
+      </a>
+    </li>
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+      <a href="#">
+        <div class="p-wrap">
+          <article class="inner">
+            <p>Class 2</p>
+          </article>
+        </div>
+      </a>
+    </li>
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+      <a href="#">
+        <div class="p-wrap">
+          <article class="inner">
+            <p>Class 3</p>
+          </article>
+        </div>
+      </a>
+    </li>
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+      <a href="#">
+        <div class="p-wrap">
+          <article class="inner">
+            <p>Class 4</p>
+          </article>
+        </div>
+      </a>
+    </li>
+  </ul>
   
-   <!-- Footer site navigation buttons -->
-
+  <!-- Footer site navigation buttons -->
     {% if page.next %}
       <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
         <span class="nav-title nav-title-next">Next</span> &rarr;
@@ -60,21 +64,3 @@ layout: default
     {% endif %}
   </article>
 </section>
-
-<!-- Accordion script -->
-
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
