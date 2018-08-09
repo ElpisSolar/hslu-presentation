@@ -3,18 +3,24 @@
   li {
     display: inline-block;
     width: 100%;
-    height: 100px;
-    @media (min-height: 700px) {
+    height: 15.5vh;
+    @media (max-height: 640px) {
       height: 15vh;
+    }
+    @media (min-height: 800px) {
+      height: 16vh;
     }
 
     .p-wrap {
       padding: $spacing-ml $spacing-m;
       background: $main-color;
-      height: 100px;
+      height: 15.5vh;
       transition: all .15s ease-in;
-    @media (min-height: 700px) {
-      height: 25vh;
+    @media (max-height: 640px) {
+      height: 15vh;
+    }
+    @media (min-height: 800px) {
+      height: 16vh;
     }
       
       &:first-child {
