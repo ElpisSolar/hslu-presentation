@@ -12,44 +12,9 @@ layout: default
 
 <!-- Main Page content goes here (content in _posts) -->
 
-  <ul class="posts">
-    <li itemscope itemtype="http://schema.org/BlogPosting">
-      <a href="#">
-        <div class="p-wrap">
-          <article class="inner">
-            <p>Class 1</p>
-          </article>
-        </div>
-      </a>
-    </li>
-    <li itemscope itemtype="http://schema.org/BlogPosting">
-      <a href="#">
-        <div class="p-wrap">
-          <article class="inner">
-            <p>Class 2</p>
-          </article>
-        </div>
-      </a>
-    </li>
-    <li itemscope itemtype="http://schema.org/BlogPosting">
-      <a href="#">
-        <div class="p-wrap">
-          <article class="inner">
-            <p>Class 3</p>
-          </article>
-        </div>
-      </a>
-    </li>
-    <li itemscope itemtype="http://schema.org/BlogPosting">
-      <a href="#">
-        <div class="p-wrap">
-          <article class="inner">
-            <p>Class 4</p>
-          </article>
-        </div>
-      </a>
-    </li>
-  </ul>
+<main>
+  {{ content }}
+</main>
   
   <!-- Footer site navigation buttons -->
   {% if page.next %}
