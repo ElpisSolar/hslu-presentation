@@ -6,7 +6,7 @@ date:   2018-07-01 16:57:51
 
 <ul class="posts">
     <li itemscope itemtype="http://schema.org/BlogPosting">
-      <a href="{{ site.url }}/{{ site.baseurl }}/testpage.html">
+      <a href="{{ site.baseurl }}/testpage.html">
         <div class="p-wrap">
           <article class="inner">
             <p>Test</p>

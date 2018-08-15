@@ -73,3 +73,26 @@
   display: inline;
 }
 
+/* content-pages */
+
+.single-content {
+  background-color: $smoke-color * 0.8;
+  font-size: 14px;
+}
+
+.content-container {
+  background-color: $smoke-color * 0.8;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  padding: 3em;
+}
+
+.image-holder {
+  display: inline-block;
+  padding: 3em;
+}
+
+.image-holder img {
+  max-height: 200px;
+}
