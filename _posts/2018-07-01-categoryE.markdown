@@ -9,7 +9,7 @@ date:   2018-07-01 16:57:51
       <a href="{{ site.baseurl }}/testpage.html">
         <div class="p-wrap">
           <article class="inner">
-            <p>Test</p>
+            <p>Subcategory 1</p>
           </article>
         </div>
       </a>
@@ -18,7 +18,7 @@ date:   2018-07-01 16:57:51
       <a href="#">
         <div class="p-wrap">
           <article class="inner">
-            <p>E</p>
+            <p>Subcategory 2</p>
           </article>
         </div>
       </a>
@@ -27,7 +27,7 @@ date:   2018-07-01 16:57:51
       <a href="#">
         <div class="p-wrap">
           <article class="inner">
-            <p>E</p>
+            <p>Subcategory 3</p>
           </article>
         </div>
       </a>
@@ -36,7 +36,7 @@ date:   2018-07-01 16:57:51
       <a href="#">
         <div class="p-wrap">
           <article class="inner">
-            <p>E</p>
+            <p>Subcategory 4</p>
           </article>
         </div>
       </a>
