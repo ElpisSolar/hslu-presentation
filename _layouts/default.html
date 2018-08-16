@@ -21,30 +21,47 @@
 <!-- Global Site Sidenav -->
 
     <div class="off-canvas">
-      <figure class="avatar">
-        <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Picture" title="That's me, {{ site.author }}.">
-      </figure>
-      <div class="bio">
-          <h1>Hi, I'm {{ site.author }}.</h1>
-          <p>{{ site.author-bio }}</p>
-      </div>
-      <nav>
-        <h6>Follow me on</h6>
-        <ul>
-          {% if site.twitter %}
-          <li><a target="_blank" href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
-          {% endif %}
-          {% if site.github %}
-          <li><a target="_blank" href="https://github.com/{{ site.github }}">Github</a></li>
-          {% endif %}
-          {% if site.dribbble %}
-          <li><a target="_blank" href="https://dribbble.com/{{ site.dribbble }}">Dribbble</a></li>
-          {% endif %}
-          {% if site.instagram %}
-          <li><a target="_blank" href="https://instagram.com/{{ site.instagram }}">Instagram</a></li>
-          {% endif %}
-        </ul>
-      </nav>
+        <div class="h-wrap-offcanvas">
+            <a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage"><img id="offcanvas-logo-header" src="{{ site.baseurl }}/assets/img/elpisblack_circle.png"></a>
+        </div>
+        <ul class="posts-oc">
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="{{ site.baseurl }}/index.html" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Main Categories</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="{{ site.baseurl }}/2018/07/01/categoryE" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Sub Categories</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="#" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Your feedback</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="#" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">About</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+          </ul>
     </div>
 
 <!-- Global Site Header -->

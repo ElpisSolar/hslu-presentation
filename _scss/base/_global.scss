@@ -82,8 +82,8 @@ small {
   font-size: 60%; 
 }
 
-ul li { list-style-type: circle; }
-ol li { list-style-type: decimal; }
+ul li { text-decoration: none; }
+ol li { text-decoration: none;; }
 
 a { 
   color: $link-color; 

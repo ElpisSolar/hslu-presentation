@@ -7,21 +7,6 @@ header {
   @extend %padding-large;
   padding-bottom: 10px;
 
-  h1.title {
-    @extend h3;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    a {
-      color: $text-color;
-      text-decoration: none;
-      &:hover {
-        color: $link-color;
-      }
-    }
-  } // end h1.title
-
   .close {
     .lines {
       background: transparent;
@@ -128,7 +113,6 @@ header {
 }
 
 .off-canvas {
-  @extend %padding-large;
   transition: transform .3s ease;;
   position: fixed;
   top: 0;
@@ -140,6 +124,7 @@ header {
   overflow: auto;
   transition: visibility 0s, opacity 0.1s linear;
   opacity: 0;
+  text-align: center;
 
   // insuring that off-canvas doesn't take more than the average iPhone portrait width under 400px
   @media (max-width: 399px) {
@@ -151,31 +136,6 @@ header {
     border-left: 1px solid $border-color;
     opacity: 1;
   }
-
-  .avatar {
-    display: block;
-    margin-bottom: $spacing-s;
-    img {
-      width: 6em;
-      height: 6em;
-      border-radius: 50%;
-    }
-  } // end .avatar
-
-
-  .bio {
-    display: block;
-    h1 {
-      @extend h3;
-      margin: 0;
-    }
-    p {
-      font-size: 90%;
-      color: lighten($text-color, 30%);
-      margin-bottom: 0;
-    }
-  }
-
 
   nav {
 
@@ -196,7 +156,118 @@ header {
     }
   }
 
-} // end .off-canvas
+} 
+
+.site-nav-container {
+  display: inline-block;
+  width: 100%;
+  background-color: $main-color; 
+  li {
+    padding: 3em;
+  }
+  ul {
+    height: 100%;
+  }
+}
+
+#offcanvas-logo-header {
+    height: 60px;
+    width: 65px;
+    float: left;
+    margin-top: -1em;
+}
+
+.h-wrap-offcanvas {
+  @extend %padding-large;
+  padding-bottom: 4em;
+  } 
+
+// off canvas
+
+.posts-oc {
+  overflow: hidden;
+  li {
+    display: inline-block;
+    width: 100%;
+    height: 22vh;
+    @media (max-height: 640px) {
+      height: 22vh;
+    }
+    @media (min-height: 800px) {
+      height: 23vh;
+    }
+
+    .p-wrap-oc {
+      padding: $spacing-ml $spacing-m;
+      background: $main-color;
+      height: 22vh;
+      transition: all .15s ease-in;
+    @media (max-height: 640px) {
+      height: 22vh;
+    }
+    @media (min-height: 800px) {
+      height: 23vh;
+    }
+      
+      &:first-child {
+        border-top: 1px solid darken($main-color, 4%);
+      }
+
+      &:active {
+        background: darken($main-color, 3%);
+      }
+      &:hover {
+        background: lighten($main-color, 3%);
+        .inner-oc {
+          -webkit-transform: translateX($spacing-s);
+          -ms-transform: translateX($spacing-s);
+          transform: translateX($spacing-s);
+          &::after {
+            margin-left: $spacing-xs;
+            @media (max-width: 1500px) {
+              content: none;
+              margin: 0;
+            }
+          }
+        }
+      }
+      @media (max-width: 1500px) {
+        padding: $spacing-m $spacing-m;
+      }
+      p {
+        display: inline;
+        margin: $spacing-xs 0 0;
+        color: white;
+      }
+      .inner-oc {
+        transition: all .15s ease-in;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    } // end .p-wrap
+  time {
+    color: darken($main-color, 20%);
+    display: inline-block;
+    padding-right: $spacing-s;
+    width: 155px;
+    @media (max-width: 942px) {
+      display: block;
+      width: auto;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+} // end li
+} // end .posts
+  
+
+// end .off-canvas
 
 #logo-header {
     width: 150px;
