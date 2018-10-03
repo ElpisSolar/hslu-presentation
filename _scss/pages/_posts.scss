@@ -2,7 +2,7 @@
   width: 100vw;
   margin: auto;
   font-family: $font-family;
-  background: white;
+  background: $white-fill;
   z-index: 1;
 
   .feat {
@@ -76,12 +76,12 @@
 /* content-pages */
 
 .single-content {
-  background-color: darken($smoke-color, 10%);
+  background-color: $main-color;
   font-size: 14px;
 }
 
 .content-container {
-  background-color: darken($smoke-color, 10%);
+  background-color: $main-color;
   margin: 0 auto;
   max-width: 500px;
   text-align: center;
@@ -99,20 +99,19 @@
 
 .access-content {
   padding: $spacing-xs;
-  border: solid blue 1px;
-  background-color: blue;
+  background-color: $white-fill;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   text-decoration: none;
   border-radius: 3%;
-  color: darken(white, 10%);
+  color: darken($main-color, 10%);
   text-transform: uppercase;
   font-weight: 600;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .access-content:hover {
-  background-color: darken(blue, 3%);
-  border: solid darken(blue, 3%) 1px;
-  color: lighten(white, 10%);
+  background-color: darken($main-color, 10%);
+  border: solid darken($main-color, 10%), 1px;
+  color: $white-fill;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }

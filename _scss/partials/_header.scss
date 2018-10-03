@@ -36,7 +36,7 @@ header {
 } // end .h-wrap
 
 .menu-icon {
-  background-color: blue;
+  background-color: $main-color;
   border-radius: 100%;
   padding: 13px 13px 23px 13px;
   border-color: slategray;
@@ -58,7 +58,7 @@ header {
     position: relative;
     width: 30px;
     height: 2px;
-    background: white;
+    background: $white-fill;
     border-radius: 20px;
 
     &::before,
@@ -69,7 +69,7 @@ header {
       left: 0;
       width: 30px;
       height: 2px;
-      background: white;
+      background: $white-fill;
       border-radius: 20px;
 
       -webkit-transition: all .3s ease;
@@ -180,6 +180,8 @@ header {
 .h-wrap-offcanvas {
   @extend %padding-large;
   padding-bottom: 4em;
+  background-color: rgb(77, 77, 240);
+  transition: all .15s ease-in;
   } 
 
 // off canvas
@@ -237,7 +239,7 @@ header {
       p {
         display: inline;
         margin: $spacing-xs 0 0;
-        color: white;
+        color: $white-fill;
       }
       .inner-oc {
         transition: all .15s ease-in;
@@ -259,7 +261,7 @@ header {
   }
 
   a {
-    color: white;
+    color: $white-fill;
     text-decoration: none;
   }
 

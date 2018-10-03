@@ -31,7 +31,6 @@
         background: darken($main-color, 3%);
       }
       &:hover {
-        background: lighten($main-color, 3%);
         .inner {
           -webkit-transform: translateX($spacing-s);
           -ms-transform: translateX($spacing-s);

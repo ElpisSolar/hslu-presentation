@@ -6,7 +6,7 @@
 html {
   width: 100%;
   height: 100%;
-  background-color: rgb(235, 230, 230);
+  background-color: $main-color;
 }
 
 body {
@@ -64,8 +64,8 @@ h5 {
 
 .page-title {
   padding: $spacing-s;
-  color: darken($main-color, 40%);
-  background-color: darken($main-color, 5%);
+  color: #f8f8f8;
+  background-color: darken($main-color, 3%);
 }
 
 h6 { 
