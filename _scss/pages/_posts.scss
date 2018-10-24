@@ -28,9 +28,12 @@
   @media (max-width: 942px) {
     position: relative;
     padding: .8em $spacing-s .7em;
-    margin-top: 5em;
+    margin-top: 3.5em;
+    
+    &:hover {
+      background: lighten($bg-color, 10%);}
+    }
   }
-}
 
 #prev { 
   left: 0.5em; 
@@ -86,6 +89,10 @@
   max-width: 500px;
   text-align: center;
   padding: 3em;
+}
+
+.desc-container { 
+  color: darken($white-fill, 3%);
 }
 
 .image-holder {
