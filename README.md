@@ -1,33 +1,17 @@
-# hikari
+# DigitalHub
 
-Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for dev-savvy bloggers who wants to get started with Jekyll in a very minimal way. 
+DigitalHub is an open-source [Jekyll](http://jekyllrb.com) e-book reader optimised for mobile phones. It serves a large collection of [Project Gutenberg](https://www.gutenberg.org/) books straight to your mobile browser. 
 
-- SCSS!
-- Responsive
-- Lightweight (no JS library has been abused here)
+This website is served through a Raspberry Pi 3, powered by a solar mobile phone charging station (find out more [here](https://elpissolar.com/digital-platform/)), and will be made available in various refugee camps around the world.
 
-![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot.png)
-
-![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot-2.png)
-
-![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot-3.png)
-
-[View demo](http://m3xm.github.io/hikari-for-Jekyll)
-
-
-### How to install
-
-1. Clone this repo
-2. Customize \_config.yml and replace all dummy posts by yours
-3. Change your profile picture in `~/assets/img/avatar.jpg`
-3. Publish (I recommend [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages), it's free)
-
+This repository is a work in progress and we are always looking for contributions!
 
 ### Development
 
 - `master` for development and pull requests.
-- `gh-pages` for the demo page; don't bother.
+- `gh-pages` for the demo page.
 
+Check out the demo at [https://elpissolar.github.io/digital-hub/](https://elpissolar.github.io/digital-hub/)
 
 #### Running locally
 
@@ -40,25 +24,10 @@ Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for dev-sav
         bundle exec jekyll serve --watch
 4. Visit the site at [http://localhost:4000](http://localhost:4000)
 
-
-### Author
-
-**Mathieu Mayer-Mazzoli**
-- <http://m3xm.github.io>
-- <http://twitter.com/mx3m>
-- <http://www.dribbble.com/m3xm>
-
-
-### Main Contributors
-
-**Ross Allen**
-- <https://github.com/ssorallen>
-
-**Julien Rousseau**
-- <https://github.com/evarouss>
-
-
 ### License
+
+**Jekyll theme based on 'hikari' by Mathieu Mayer-Mazzoli**
+- <https://themes.gohugo.io/hikari/>
 
 The MIT License (MIT)
 
