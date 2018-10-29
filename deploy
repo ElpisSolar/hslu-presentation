@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+REPO="git@github.com:ElpisSolar/digital-hub.git"
+REV=${CIRCLE_SHA1:-$(git rev-parse HEAD)}
+temp=$(mktemp -d)
+git clone -b gh-pages "$REPO" "$temp"
+mv * "$temp"/
+cd "$temp"
+git add .
+
+git config --global user.email "contact.projectelpis@gmail.com"
+git config --global user.name "Elpis Build Robot"
+
+git commit -m "Updating gh-pages from $REV"
+git push -f origin gh-pages:gh-pages
