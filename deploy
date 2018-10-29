@@ -11,5 +11,5 @@ git add .
 git config --global user.email "contact.projectelpis@gmail.com"
 git config --global user.name "Elpis Build Robot"
 
-git commit -m "Updating gh-pages from $REV"
+git commit --allow-empty -m "Updating gh-pages from $REV"
 git push -f origin gh-pages:gh-pages
