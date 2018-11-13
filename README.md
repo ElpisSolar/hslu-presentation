@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/ElpisSolar/digital-hub.svg?style=svg)](https://circleci.com/gh/ElpisSolar/digital-hub)
 # DigitalHub
 
 DigitalHub is an open-source [Jekyll](http://jekyllrb.com) e-book reader optimised for mobile phones. It serves a large collection of [Project Gutenberg](https://www.gutenberg.org/) books straight to your mobile browser. 
