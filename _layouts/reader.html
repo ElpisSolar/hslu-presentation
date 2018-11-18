@@ -13,6 +13,27 @@
       <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
       <link rel="stylesheet" type="text/css" href="{{ site.baseurl| split: '/' | join:'/' }}/css/main.css" />
       <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+      <!-- jquery scripts for displaying off-canvas navigation -->
+      <script>
+      // make off-canvas visible
+      $(document).ready(function(){
+          $("#nav-icon").click(function(){
+              $("#off-canvas").toggleClass("oc-visible");
+          });
+      });
+      // make off-canvas invisible
+      $(document).ready(function(){
+          $("#nav-icon-close").click(function(){
+              $("#off-canvas").removeClass("oc-visible");
+          });
+      });
+      
+      </script>
+<!-- off canvas toggle class oc-visible -->
+
+
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -20,7 +41,53 @@
     <![endif]-->
     
 
-<!-- E-book reader -->
+    <!-- category menu -->
+
+    <div id="off-canvas" class="off-canvas">
+        <div class="h-wrap-offcanvas">
+            <a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage"><img id="offcanvas-logo-header" src="{{ site.baseurl }}/assets/img/elpiswhite.png"></a>
+            <a id="nav-icon-close"><img src="{{ site.baseurl }}/assets/img/exit.svg"></a>
+        </div>
+        <ul class="posts-oc">
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="{{ site.baseurl }}/index.html" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Main Categories</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="{{ site.baseurl }}/2018/07/01/categoryE" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Sub Categories</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="#" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Your feedback</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="#" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">About</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+          </ul>
+    </div>
+    <!-- E-book reader -->
 
     <div class="book-container">
         <div class="text-container">
@@ -28,7 +95,9 @@
                 {{ content }}
             </main>
          </div>
-        <nav class="book-nav"><a href="#">navigation</nav>
+        <nav class="book-nav">
+        <a id="nav-icon"><img src="{{ site.baseurl }}/assets/img/home.svg"></a>
+        </nav>
     </div>
     </body>
 </html>
