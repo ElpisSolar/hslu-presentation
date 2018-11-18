@@ -1,0 +1,94 @@
+---
+
+---
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>{{ site.name }} - {{ site.description }}</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="{{ site.description }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl| split: '/' | join:'/' }}/css/main.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+      <!-- jquery scripts for displaying off-canvas navigation -->
+      <script>
+      // make off-canvas visible
+      $(document).ready(function(){
+          $("#nav-icon").click(function(){
+              $("#off-canvas").toggleClass("oc-visible");
+          });
+      });
+      // make off-canvas invisible
+      $(document).ready(function(){
+          $("#nav-icon-close").click(function(){
+              $("#off-canvas").removeClass("oc-visible");
+          });
+      });
+      
+      </script>
+<!-- off canvas toggle class oc-visible -->
+
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+    <!-- category menu -->
+
+    <div id="off-canvas" class="off-canvas">
+        <div class="h-wrap-offcanvas">
+            <a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage"><img id="offcanvas-logo-header" src="{{ site.baseurl }}/assets/img/elpiswhite.png"></a>
+            <a id="nav-icon-close"><img src="{{ site.baseurl }}/assets/img/exit.svg"></a>
+        </div>
+        <ul class="posts-oc">
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="{{ site.baseurl }}/index.html" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Home</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="{{ site.baseurl }}/2018/07/01/categoryE" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Subcategories</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="{{ site.baseurl }}/about.html" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">About</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+          </ul>
+    </div>
+    <!-- E-book reader -->
+
+    <div class="book-container">
+        <div class="text-container">
+            <main>
+                {{ content }}
+            </main>
+         </div>
+        <nav class="book-nav">
+        <a id="nav-icon"><img src="{{ site.baseurl }}/assets/img/home.svg"></a>
+        </nav>
+    </div>
+    </body>
+</html>
