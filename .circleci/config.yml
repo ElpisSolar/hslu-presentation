@@ -55,7 +55,7 @@ jobs:
             EOF
       - run:
           name: Deploy to gh-pages
-          command: ./deploy
+          command: find && cd _site && ../deploy
 
 workflows:
   version: 2
