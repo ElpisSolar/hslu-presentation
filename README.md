@@ -10,6 +10,7 @@ This repository is a work in progress and we are always looking for contribution
 ### Development
 
 - `master` for development and pull requests.
+- `development` for testing/working on new features.
 - `gh-pages` for the demo page.
 
 Check out the demo at [https://elpissolar.github.io/digital-hub/](https://elpissolar.github.io/digital-hub/)
