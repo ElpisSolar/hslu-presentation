@@ -1,8 +1,5 @@
 defaults: &defaults
   working_directory: ~/repo
-  branches:
-    ignore:
-      - gh-pages
 
 version: 2
 jobs:
@@ -64,7 +61,10 @@ workflows:
   version: 2
   test-deploy:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              ignore: gh-pages
       - deploy:
           requires:
             - build
