@@ -1,14 +1,14 @@
 # Title of your blog; shows in the header
-name: "Elpis Digital Hub"
+name: "Elpis Interactive Presentation"
 
 # Description of your content (will only be used on Google Search)
-description: "Offline e-book library served through Raspberry Pi computer"
+description: "An Offline e-book library served through a Raspberry Pi computer"
 
 # Your name. Will show in your footer + sidebar
 author: "Elpis Solar"
 
 url: "https://elpissolar.github.io"
-baseurl: "/digital-hub/"
+baseurl: "/hslu-presentation/"
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
 author-bio: "x"

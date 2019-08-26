@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eu
-REPO="git@github.com:ElpisSolar/digital-hub.git"
+REPO="git@github.com:ElpisSolar/hslu-presentation.git"
 REV=${CIRCLE_SHA1:-$(git rev-parse HEAD)}
 temp=$(mktemp -d)
 cp -r * "$temp"/
