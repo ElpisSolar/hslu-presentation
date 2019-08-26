@@ -1,5 +1,3 @@
-[![CircleCI](https://circleci.com/gh/ElpisSolar/digital-hub.svg?style=svg)](https://circleci.com/gh/ElpisSolar/digital-hub)
-
 This short interactive presentation is meant to be viewed on a mobile phone, and has been served through a Raspberry Pi 3 at an exhibition at the Luzern School for Applied Arts and Sciences.
 
 #### Running locally
