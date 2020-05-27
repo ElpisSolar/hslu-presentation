@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+REPO="git@github.com:ElpisSolar/hslu-presentation.git"
+REV=${CIRCLE_SHA1:-$(git rev-parse HEAD)}
+temp=$(mktemp -d)
+cp -r * "$temp"/
+cd "$temp"
+
+git config --global user.email "contact.projectelpis@gmail.com"
+git config --global user.name "Elpis Build Robot"
+
+git init
+git remote add origin "$REPO"
+git checkout -b gh-pages
+git add .
+git commit --allow-empty -m "Updating gh-pages from $REV"
+git push -f origin gh-pages:gh-pages

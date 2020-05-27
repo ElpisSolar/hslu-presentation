@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Elpis Interactive Presentation - An Offline e-book library served through a Raspberry Pi computer</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="An Offline e-book library served through a Raspberry Pi computer">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/hslu-presentation/css/main.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+      <!-- jquery scripts for displaying off-canvas navigation -->
+      <script>
+      // make off-canvas visible
+      $(document).ready(function(){
+          $("#nav-icon").click(function(){
+              $("#off-canvas").toggleClass("oc-visible");
+          });
+      });
+      // make off-canvas invisible
+      $(document).ready(function(){
+          $("#nav-icon-close").click(function(){
+              $("#off-canvas").removeClass("oc-visible");
+          });
+      });
+      
+      </script>
+<!-- off canvas toggle class oc-visible -->
+
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+    <!-- category menu -->
+
+    <div id="off-canvas" class="off-canvas">
+        <div class="h-wrap-offcanvas">
+            <a href="/hslu-presentation/" title="Back to Homepage"><img id="offcanvas-logo-header" src="/hslu-presentation//assets/img/elpiswhite.png"></a>
+            <a id="nav-icon-close"><img src="/hslu-presentation//assets/img/exit.svg"></a>
+        </div>
+        <ul class="posts-oc">
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="/hslu-presentation//index.html" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Home</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="/hslu-presentation//2018/07/01/categoryE" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">Subcategories</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+            <li itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="/hslu-presentation//about.html" itemprop="url">
+                <div class="p-wrap-oc">
+                  <article class="inner-oc">
+                    <p itemprop="name headline">About</p>
+                  </article>
+                </div>
+              </a>
+            </li>
+          </ul>
+    </div>
+    <!-- E-book reader -->
+
+    <div class="book-container">
+        <div class="text-container">
+            <main>
+                    <p>
+      Call me Ishmael. Some years ago&mdash;never mind how long precisely&mdash;having
+      little or no money in my purse, and nothing particular to interest me on
+      shore, I thought I would sail about a little and see the watery part of
+      the world. It is a way I have of driving off the spleen and regulating the
+      circulation. Whenever I find myself growing grim about the mouth; whenever
+      it is a damp, drizzly November in my soul; whenever I find myself
+      involuntarily pausing before coffin warehouses, and bringing up the rear
+      of every funeral I meet; and especially whenever my hypos get such an
+      upper hand of me, that it requires a strong moral principle to prevent me
+      from deliberately stepping into the street, and methodically knocking
+      people&rsquo;s hats off&mdash;then, I account it high time to get to sea as soon
+      as I can. This is my substitute for pistol and ball. With a philosophical
+      flourish Cato throws himself upon his sword; I quietly take to the ship.
+      There is nothing surprising in this. If they but knew it, almost all men
+      in their degree, some time or other, cherish very nearly the same feelings
+      towards the ocean with me.
+    </p>
+    <p>
+      Call me Ishmael. Some years ago&mdash;never mind how long precisely&mdash;having
+      little or no money in my purse, and nothing particular to interest me on
+      shore, I thought I would sail about a little and see the watery part of
+      the world. It is a way I have of driving off the spleen and regulating the
+      circulation. Whenever I find myself growing grim about the mouth; whenever
+      it is a damp, drizzly November in my soul; whenever I find myself
+      involuntarily pausing before coffin warehouses, and bringing up the rear
+      of every funeral I meet; and especially whenever my hypos get such an
+      upper hand of me, that it requires a strong moral principle to prevent me
+      from deliberately stepping into the street, and methodically knocking
+      people&rsquo;s hats off&mdash;then, I account it high time to get to sea as soon
+      as I can. This is my substitute for pistol and ball. With a philosophical
+      flourish Cato throws himself upon his sword; I quietly take to the ship.
+      There is nothing surprising in this. If they but knew it, almost all men
+      in their degree, some time or other, cherish very nearly the same feelings
+      towards the ocean with me.
+    </p>
+
+            </main>
+         </div>
+        <nav class="book-nav">
+        <a id="nav-icon"><img src="/hslu-presentation//assets/img/home.svg"></a>
+        </nav>
+    </div>
+    </body>
+</html>
